@@ -1,0 +1,354 @@
+/*
+Student Name : Jonathan Suryadiputra 
+Student ID : C00235450
+Group : C2P-B
+Course : CW_KCSOF_B
+Date : 20/4/20
+Purpose of CSS : Style the counter sales page.
+*/
+
+/* general styling */
+body {
+	background-image : url("/img/tilebackground.png");
+	background-size : 200px 200px;
+	background-repeat : repeat;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input:focus {
+	outline : 0;
+}
+
+button:focus {
+	outline : 0;
+}
+
+button:hover {
+	cursor : pointer;
+	background-color : #610509;
+	color : #FFBABE;
+}
+
+button:disabled {
+	background-color : #FFD6D8;
+	color : #661015;
+	cursor : no-drop;
+}
+
+/* general table styling */
+table {
+	border-collapse : collapse;
+}
+
+thead {
+	display : block;
+}
+
+tbody {
+	display : block;
+	overflow-y : scroll;
+	height : 282px;
+}
+
+tbody.shoppingcarttbody {
+	height : 320px;
+}
+
+tbody::-webkit-scrollbar {
+    width: 5px !important;
+    background-color: transparent;
+	display : none;
+}
+
+th, td {
+	font-size : 14px;
+	padding : 5px;
+}
+
+th {
+	background-color : #932127;
+}
+
+tr {
+	color : white;
+	background-color : #F04C4D;
+}
+
+tr:hover {
+	background-color : #D13435;
+}
+
+tr.outofstock {
+	color : #FFD4D4;
+	background-color : #FF7A7B;
+}
+
+/* to remove outer borders, giving a chic style and to not interfere on the border-radius of the divs */
+table th {
+	border: 1px solid white;
+}
+
+table tr th:first-child {
+	border-left: 0;
+}
+
+table tr th:last-child {
+	border-right: 0;
+}
+
+table td {
+	border: 1px solid white;
+}
+
+table tr td{
+	border-top: 0;
+}
+
+table tr td:first-child {
+	border-left: 0;
+}
+
+table tr td:last-child {
+	border-right: 0;
+}
+
+/* column width arrangements for stock item table */
+th.stocknum, td.stocknum {
+	width : 60px;
+}
+
+th.description, td.description {
+	width : 220px;
+}
+
+th.unitprice, td.unitprice{
+	width : 100px;
+}
+
+th.qtyinstock, td.qtyinstock {
+	width : 80px;
+}
+
+th.addtocart, td.addtocart {
+	width : 80px;
+}
+
+/* total width of whole table according to the column widths
+60px + 200px + 100px + 80px + 80px = 520px */
+
+/* column width arrangements for shopping cart table */
+th.cartstocknum, td.cartstocknum {
+	width : 60px;
+}
+
+th.cartdescription, td.cartdescription {
+	width : 220px;
+}
+
+th.cartbuyquantity, td.cartbuyquantity {
+	width : 80px;
+}
+
+th.carttotalprice, td.carttotalprice {
+	width : 100px;
+}
+
+th.remove, td.remove {
+	border-right: 0; /* remove right border of this column since the last child rule did not apply to this column as there is another column next to it that is hidden to store stocknumber fields for easier php reference */
+	width : 80px;
+}
+
+th.hidden {
+	display : none;
+}
+
+/* total width of whole table according to the column widths
+60px + 220px + 80px + 100px + 80px = 540px */
+
+/* containers */
+.outercontainer {
+	display : flex;
+	justify-content : center;
+	position : relative;
+}
+
+.inlinecontainer {
+	display : inline-block;
+}
+
+.headercontainer {
+	line-height : 60px;
+	height : 60px;
+	margin-left : 15px;
+	margin-right : 15px;
+	width : 592px;
+	background-color : #932127;
+	border-radius : 10px 10px 0px 0px;
+	color : white;
+}
+
+.stocktablecontainer {
+	margin-left : 15px;
+	margin-right : 15px;
+	width : 592px;
+	height : 350px;
+	border-radius : 0px 0px 10px 10px;
+	background-color : #F04C4D;
+	overflow : hidden;
+}
+
+.shoppingcartcontainer {
+	margin-left : 15px;
+	margin-right : 15px;
+	width : 592px;
+	height : 350px;
+	background-color : #F04C4D;
+	overflow : hidden;
+}
+
+.footercontainer {
+	margin-left : 15px;
+	margin-right : 15px;
+	width : 592px;
+	border-radius : 0px 0px 10px 10px;
+	background-color : #932127;
+	height : 40px;
+}
+
+.quantity {
+	display: flex;
+	vertical-align : middle;
+	justify-content : center;
+}
+
+/* elements styling */
+.grandtotallabel {
+	font-weight : bold;
+	font-size : 20px;
+	margin-left : 60px;
+	margin-top : 5px;
+	color : white;
+}
+
+input.grandtotal {
+	background : transparent;
+	font-weight : bold;
+	font-size : 20px;
+	font-family : serif;
+	border-style : none;
+	text-align : center;
+	width : 100px;
+	color : white;
+	margin-right : 100px;
+	margin-top : 5px;
+}
+
+input.searchbar {
+	width : 100%;
+	height : 40px;
+	font-size : 14px;
+	padding : 10px;
+	font-family : serif;
+	border-style : none;
+	background-color : #F6F6F6;
+}
+
+input.buyquantity {
+	font-family : serif;
+	font-size : 14px;
+	color : #932127;
+	border-style : none;
+	background : white;
+	width : 30px;
+	height : 15px;
+	text-align : center;
+}
+
+input.totalpricefield {
+	font-family : serif;
+	font-size : 14px;
+	border-style : none;
+	background : transparent;
+	width : 50px;
+	color : white;
+}
+
+.checkoutbutton {
+	font-family : serif;
+	background-color : #F04C4D;
+	border-radius : 5px;
+	border-style : none;
+	font-size : 20px;
+	color : white;
+	margin-top : 5px;
+}
+
+.clearcartbutton {
+	font-family : serif;
+	background-color : #F04C4D;
+	border-radius : 5px;
+	border-style : none;
+	font-size : 20px;
+	color : white;
+	margin-top : 5px;
+	margin-left : 5px;
+}
+
+.tablebutton {
+	font-family : serif;
+	background-color : #932127;
+	border-radius : 5px;
+	border-style : none;
+	color : white;
+}
+
+.xbutton {
+	font-family : sans-serif;
+	background-color : #932127;
+	border-radius : 5px;
+	border-style : none;
+	color : white;
+}
+
+.plusbutton {
+	height : 15px;
+	border-top-left-radius : 5px;
+	border-bottom-left-radius : 5px;
+	font-family : serif;
+	background-color : #932127;
+	border-style : none;
+	color : white;
+}
+
+.minusbutton {
+	height : 15px;
+	border-top-right-radius : 5px;
+	border-bottom-right-radius : 5px;
+	font-family : serif;
+	background-color : #932127;
+	border-style : none;
+	color : white;
+}
+
+button.searchbutton {
+	background-color : #F6F6F6;
+	border-style : none;
+	color : gray;
+	padding-left : 10px;
+	padding-right : 10px;
+	font-size : 20px;
+}
+
+button.searchbutton:hover {
+	background-color : #E3E3E3;
+	color : #545454;
+}
+
+button.searchbutton:active {
+	background-color : #E3E3E3;
+	color : #545454;
+}

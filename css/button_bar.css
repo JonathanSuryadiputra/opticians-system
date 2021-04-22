@@ -1,0 +1,202 @@
+/* please don't mixed up the 6 button style into one as each button has a little bit different adjustment.
+
+/* link */
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+
+/* image */
+#bar_logo {
+	width: 511px;
+	height: 50px;
+	
+}
+
+#quit_white {
+	width: 89px;
+	height: 30px; 
+	position: absolute;
+	top: 40px;
+	right: 0px;
+}
+
+/* button 1 */
+.button1 {
+  background-color: #F04C4D; /* red */
+}
+
+.button1:hover {
+  background-color: #932127; /* dark red */
+}
+
+/* button 2 */
+.button2 {
+  background-color: #43B75E; /* green */
+}
+
+.button2:hover {
+  background-color: #1D702D; /* dark green */
+}
+
+/* button 3 */
+.button3 {
+	background-color: #3371B8; /* blue */
+}
+
+.button3:hover {
+	background-color: #114A82; /* dark blue */
+}
+
+div.dropdown-button3 {
+	background-color: #BDD7F2; /* light blue L1*/
+}
+
+div.dropdown-button3 a {
+  font-size: 14px;
+  color: #3371B8; /* light blue L2 */
+  padding: 12px 30px;
+  text-decoration: none;
+  display: block;
+}
+
+div.dropdown-button3 a:hover {
+	border-radius: 8px;
+	color: black;
+	background-color: #95B7D8
+}
+
+/* button 4 */
+.button4 {
+	background-color: #9A6CAF; /* purple */
+}
+
+.button4:hover {
+	background-color: #63367A; /* dark purple */
+}
+
+div.dropdown-button4 {
+	background-color: #E8CDF7; /* light purple L1*/
+}
+
+div.dropdown-button4 a {
+  font-size: 14px;
+  color: #9A6CAF; /* light purple L2 */
+  padding: 12px 18px;
+  text-decoration: none;
+  display: block;
+}
+
+div.dropdown-button4 a:hover {
+	border-radius: 8px;
+	color: black;
+	background-color: #D2AEE5;
+}
+
+/* button 5 */
+.button5 {
+	background-color: #B1B96C; /* yellow */
+}
+
+.button5:hover {
+	background-color: #85893A; /* dark yellow */
+}
+
+div.dropdown-button5 {
+	background-color: #FDFFDC; /* light yellow L1 */
+}
+
+div.dropdown-button5 a {
+  font-size: 14px;
+  color: #B1B96C; /* light yellow L2 */
+  padding: 12px 18px;
+  text-decoration: none;
+  display: block;
+}
+
+div.dropdown-button5 a:hover {
+	border-radius: 8px;
+	color: black;
+	background-color: #DFE2A6;
+}
+
+/*button 6 */
+.button6 {
+	background-color: #B9786C; /* orange */
+}
+
+.button6:hover {
+	background-color: #A04A3F; /* dark orange */
+}
+
+div.dropdown-button6 {
+	background-color: #FFE6E3; /* light orange L1 */
+}
+
+div.dropdown-button6 a {
+  font-size: 14px;
+  color: #B9786C; /* light orange L2 */
+  padding: 12px 18px;
+  text-decoration: none;
+  display: block;
+}
+
+div.dropdown-button6 a:hover {
+	border-radius: 8px;
+	color: black;
+	background-color: #EAAFA7;
+}
+
+/* for each buttons  */
+a.icon {
+	color: white;
+	font-size: 15px;
+	letter-spacing: 1px;
+}
+
+div.position:hover .dropdown-button6 {
+  display: block;
+}
+
+div.dropdown {
+	margin-top:8px;
+	min-width: 180px;
+	display: none;
+	position: absolute;
+	border-radius: 8px;
+	z-index: 1;
+}
+
+div.position:hover .dropdown {
+  display: block;
+}
+
+/* div */
+div.top_menu {
+	background-color: #555555;
+	padding-top: 15px;
+	height: 65px;
+	min-width: 1200px;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+div.position {
+	margin-top:10px;
+	margin-left:5px;
+	margin-right:5px;
+	padding-top:5px;
+	height:25px;
+	width:180px;
+	border-radius: 6px;
+	position: relative;
+	display: inline-block;
+}

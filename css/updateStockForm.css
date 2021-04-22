@@ -1,0 +1,131 @@
+/*
+Student Name : Jonathan Suryadiputra 
+Student ID : C00235450
+Group : C2P-B
+Course : CW_KCSOF_B
+Date : 20/4/20
+Purpose of CSS : Style the update stock record form page.
+*/
+
+/* general styling */
+body {
+	background-image : url("/img/tilebackground.png");
+	background-size : 200px 200px;
+	background-repeat : repeat;
+}
+
+button {
+	background-color : #85893A;
+	color : white;
+	border : none;
+	width : 185px;
+	height : 30px;
+	font-size : 15px;
+	border-radius : 4px;
+	position : relative;
+	left : 10px;
+	font-family : "Serif";
+}
+
+button:hover {
+	background-color : #5B5E18;
+	color : #FCFFCF;
+	cursor : pointer;
+}
+
+button:focus {
+	outline : 0;
+}
+
+select {
+	background-color : #F6F6F6;
+	width : 100%;
+	height : 30px;
+	border : none;
+	margin-top : -5px;
+	border-radius : 4px;
+	font-family : "Serif";
+	font-size : 14;
+}
+
+select:hover {
+	cursor : pointer;
+}
+
+textarea {
+	background-color : #F6F6F6;
+	border : none;
+	width : 100%;
+	border-radius : 4px;
+	margin-top : 10px;
+	padding : 10px;
+	font-size : 14px;
+	font-family : "Serif";
+}
+
+/* containers */
+.container {
+	height : 500px;
+	display : flex;
+	align-items : center;
+	justify-content : center;
+	padding-top : 50px;
+	margin-top : 20px;
+	position : relative;
+	top : 18px;
+}
+
+.formheadercontainer {
+	background-color : #85893A;
+	height : 70px;
+	line-height : 70px;
+	font-size : 36px;
+	color : white;
+	text-align : center;
+	border-radius : 5px 5px 0 0;
+}
+
+.formfieldscontainer {
+	background-color : #DFE2A6;
+	width : 400px;
+	height : auto;
+	color : #85893A;
+	border-radius : 0 0 5px 5px;
+	padding : 10px 20px 20px 20px;
+}
+
+.inlinefieldcontainer {
+	display : inline-block;
+	padding-right : 20px;
+}
+
+.buttonscontainer {
+	align-items : center;
+	justify-content : center;
+	display : flex;
+}
+
+/* text fields, buttons, etc. */
+.textfield {
+	background-color : #F6F6F6;
+	width : 100%;
+	height : 30px;
+	font-size : 14px;
+	padding : 10px;
+	margin-top : 10px;
+	border-radius : 4px;
+	border : none;
+	font-family : "Serif";
+}
+
+.numberfield {
+	background-color : #F6F6F6;
+	width : 178px;
+	height : 30px;
+	font-size : 14px;
+	margin-top : 10px;
+	padding : 10px;
+	border-radius : 4px;
+	border : none;
+	font-family : "Serif";
+}
